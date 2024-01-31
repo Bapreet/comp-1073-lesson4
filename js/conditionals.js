@@ -30,6 +30,12 @@ function setWeather() {
 	if (choice === "sunny"){
 		//change weather icon
 		icon.setAttribute("src", "images/sunny.svg");
+		//change color of screen based on temperature
+		if (temperature >= 15){
+			page.style.backgroundColor = "orange";
+		}else{
+			page.style.backgroundColor = "lightblue";
+		}
 	}else if (choice === "rainy"){
 		icon.setAttribute("src", "images/rainy.svg");	
 	}else if (choice === "windy"){
