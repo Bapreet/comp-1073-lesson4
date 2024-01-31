@@ -34,6 +34,8 @@ function setWeather() {
 		icon.setAttribute("src", "images/rainy.svg");	
 	}else if (choice === "windy"){
 		icon.setAttribute("src", "images/windy.svg");	
+	}else{
+		icon.setAttribute("src", "images/cloud-off.svg");
 	}
 	/* STEP 3: Add a nested IF/ELSE statement inside the 'sunny' condition above that tests for temperature, and if it is equal to or greater than 15, turn the page background orange, otherwise turn it lightblue */
 
